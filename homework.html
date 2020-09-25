@@ -14,9 +14,33 @@
         font-size: 15pt;
     }
 </style>
+<style>
+    #fade {
+    animation: fadein 3s;
+    -webkit-animation: fadein 3s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+</style>
 <title>과제</title>
 </head>
 <body>
+    <div id = "fade">
     <div align = "center">
     <h1>조우식 단대소프트고 10521</h1>
     <table>
@@ -105,5 +129,7 @@
             <td>학원</td>
         </tr>
     </table>
+</div>
+
 </body>
 </html>
