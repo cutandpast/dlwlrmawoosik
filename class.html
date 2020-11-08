@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>우리 학급 소개</title>
+<style>
+        @font-face {
+            font-family: 'MapoGoldenPier';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoGoldenPierA.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        p{
+            font-family: MapoGoldenPier;
+        }
+        #bigfont{
+            -webkit-transition: all 0.3s;
+            color:black;
+            font-size:50pt;
+        }#bigfont:hover{
+            color:dodgerblue;
+            font-size:45pt;
+        }
+        #jws{
+            width:20%;
+            -webkit-transition: all 0.3s;
+        }
+        #jws:hover{
+            width:40%
+        }
+        #jws1{
+            font-size:16pt;
+            -webkit-transition: all 0.3s;
+        }
+        #jws1:hover{
+            font-size:20pt;
+        }
+        button,
+        button::after {
+        -webkit-transition: all 0.3s;
+	    -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+	    transition: all 0.3s;
+        }
+
+        button {
+            background: none;
+            border: 7px solid #fff;
+            border-radius: 20px;
+            color: #fff;
+            display: block;
+            font-size: 1.6em;
+            font-weight: bold;
+            margin: 1em auto;
+            padding: 2em 6em;
+            position: relative;
+            text-transform: uppercase;
+
+          }
+          
+          button::before,
+          button::after {
+            background: #fff;
+            content: '';
+            position: absolute;
+            z-index: -1;
+          }
+          
+          button:hover {
+            color: dodgerblue;
+          }
+          .btn::before {
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
+          }
+          
+          .btn::after {
+            background: dodgerblue;
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
+          }
+          
+          .btn:hover:after {
+            height: 0;
+            left: 50%;
+            top: 50%;
+            width: 0;
+          }
+</style>
+<script>
+    function button_click() {
+        document.getElementById('wow').style.backgroundImage= "url(background.jpg)";
+        alert("행복하고 돈 마니 벌기!!");
+        var wow = document.getElementById("wow");          
+        wow.style.color = "white"; 
+    }
+</script>
+</head>
+<body id = "wow">
+    <div align = "center">
+        <p id = "bigfont">우리 5반을 소개할게!</p>
+    <br>
+    <p id = "jws1">단대소프트고의 5반은 게임콘텐츠과로 게임을 좋아하고, 관심이 많은 친구들이 모였습니다.<br>
+    취향이 독특한 친구들도 있으며... 유쾌한 친구들도 많습니다.</p>
+    <br><br><br><br>
+    <img id = "jws" src = "teacher.png">
+    <p id = "jws1">저희 5반의 담임선생님은 수학선생님이십니다.<br>수학선생님은 옷을 색있는 카라티를 주로 입는다는<br>인터넷 썰들이 있지만
+    이와 달리 담임선생님은 옷을 잘입으십니다.</p>
+    <br><br>
+    <p id = "jws" style = "font-size: 20pt;">5반의 2학기 임원들!!</p>
+    <img id = "jws" class = "image" src = "photo1.png">
+    <p id = "jws1">5반의 2학기 임원들은 고경훈과 남궁민입니다.<br>나름 그들이 맡은 역할을 잘하고 있으며(그런가?)경훈이는 반의 회장으로서 열심히 수업에 참여합니다.</p>
+    <br><br>
+    <p style = "font-size: 30pt;">이슈!!!</p>
+    <br>
+    <p id = "jws1">아쉽게도.. 큰 이슈가 없습니다. <br>저희반에 김모군이 여자를 많이 밝히는 것 정도..?</p>
+    <p>1-강태훈: 하드한 게임을 잘 한다.<br>
+        2-고경훈: 공부는 열심히 한다.<br>
+        3-고대현: 웃음이 많다.<br>
+        4-김남구: 키가 매우 엄청 크다.<br>
+        5-김민준: 운동을 잘한다.<br>
+        6-김승민: 일을 잘한다.<br>
+        7-김영호: ???<br>
+        8-김종건: 친구들에게 인기가 많다<br>
+        9-김현민: ???<br>
+        10-남궁민: 분위기를 잘 띄운다.<br>
+        11-문요한: 재능충에 겸손하다.<br>
+        12-박근우: 칭찬할게 없다 하루종일 수업 중에 잔다;;<br>
+        13-박준서: ???<br>
+        14-박현우: 체력이 좋다.<br>
+        16-윤성준: ???<br>
+        17-이정우: 분위기를 만들 줄 안다. (?)<br>
+        18-이태민: 놀 때 잘 논다.<br>
+        19-임근: 잘생겼다. ( 쌤들과 매우 친하다.)(+매우 개인적인 생각인듯 하다)<br>
+        20-장준호: 영어를 매우 잘한다.<br>
+        21-조우식: 프로그래밍 지식이 많다.<br>
+        22-신상이: 게임을 잘한다.<br>
+        23-양성식: 일러스트레이터를 잘한다.</p>
+        <button type="button" class = "btn" onclick = "button_click()">우리의 꿈!</button>
+    </div>
+</body>
+</html>
